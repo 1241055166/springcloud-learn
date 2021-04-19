@@ -1,0 +1,30 @@
+package com.macro.cloud.controller;
+
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * 获取当前登录用户信息
+ */
+@RestController
+@RequestMapping("/user")
+public class UserController {
+    @GetMapping("/getCurrentUser")
+    public Object getCurrentUser(Authentication authentication) {
+        return authentication;
+    }
+
+    /**
+     * 添加需要admin权限的接口
+     * @return
+     */
+    @PreAuthorize("hasAuthority('admin')")
+    @GetMapping("/auth/admin")
+    public Object adminAuth() {
+        return "Has admin auth!";
+    }
+
+}

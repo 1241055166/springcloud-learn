@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev    #Nacos中的dataid的组成格式及与SpringBoot配置文件中的属性对应关系：
+                   #  ${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+
+# 比如说我们现在要获取应用名称为nacos-config-client的应用在dev环境下的yaml配置，dataid如下：
+# nacos-config-client-dev.yaml
+
+#按照以上dataid添加如下配置：
+#config:
+  #  info: "config info for dev"
+
+# 步骤:  访问:  http://localhost:8848/nacos/#/configurationManagement?serverId=center&namespace=&edasAppName=&edasAppId=&searchDataId=&searchGroup=&group=&dataId=&appName=
+   #  1: 配置管理的配置列表点击+号，输入  nacos-config-client-dev.yaml
+   #  2： 在下面选择yaml：
+   #    输入  config:
+   #            info: "config info for dev"
+

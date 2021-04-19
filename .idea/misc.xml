@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/turbine-service/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/config-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-client/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-security-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2-jwt-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth2-client/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/sentinel-service/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-account-service/pom.xml" />
+        <option value="$PROJECT_DIR$/seata-storage-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

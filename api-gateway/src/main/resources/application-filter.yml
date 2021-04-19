@@ -1,0 +1,26 @@
+server:
+  port: 9201
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  cloud:
+    gateway:   #当路由出错时会转发到服务降级处理的控制器上
+      routes:
+        - id: retry_route
+          uri: http://localhost:8201
+          predicates:
+            - Method=GET    #使用Redis来进行限流，所以需要添加Redis和RequestRateLimiter的配置，这里对所有的GET请求都进行了按IP来限流的操作；
+          filters:
+            - name: Retry
+              args:
+                retries: 1 #需要进行重试的次数
+                statuses: BAD_GATEWAY #返回哪个状态码需要进行重试，返回状态码为5XX进行重试
+                backoff:
+                  firstBackoff: 10ms
+                  maxBackoff: 50ms
+                  factor: 2
+                  basedOnPreviousValue: false
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

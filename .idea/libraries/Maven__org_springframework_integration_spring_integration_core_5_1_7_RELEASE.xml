@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.integration:spring-integration-core:5.1.7.RELEASE">
+    <CLASSES>
+      <root url="jar:///usr/local/apache-maven-3.5.2/mavenRepo/org/springframework/integration/spring-integration-core/5.1.7.RELEASE/spring-integration-core-5.1.7.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar:///usr/local/apache-maven-3.5.2/mavenRepo/org/springframework/integration/spring-integration-core/5.1.7.RELEASE/spring-integration-core-5.1.7.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar:///usr/local/apache-maven-3.5.2/mavenRepo/org/springframework/integration/spring-integration-core/5.1.7.RELEASE/spring-integration-core-5.1.7.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
